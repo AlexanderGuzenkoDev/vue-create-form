@@ -6,8 +6,14 @@ const router = createRouter({
   history: createWebHistory(),
   routes: [
     {
+      path: "/",
+      redirect: {
+        name: "edit",
+      },
+    },
+    {
       path: "/edit",
-      name: "fields",
+      name: "edit",
       component: AddFields,
     },
     {
